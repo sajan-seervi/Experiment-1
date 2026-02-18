@@ -1,0 +1,27 @@
+# Write a program to input various string operations
+
+s = input("Enter a string: ")
+print("Original string:", s)
+
+print("Length of string:", len(s))
+
+print("Uppercase:", s.upper())
+print("Lowercase:", s.lower())
+
+sub = input("Enter a substring to find: ")
+print("Position:", s.find(sub))
+
+old = input("Enter the old string: ")
+new = input("Enter the new string: ")
+print("After replacement:", s.replace(old, new))
+
+print("Split string:", s.split())
+
+str1 = input("Enter first string: ")
+str2 = input("Enter second string: ")
+
+concat = str1 + str2
+print("Concatenation:", concat)
+
+print("Is Alphabetic?", concat.isalpha())
+print("Is Numeric?", concat.isdigit())
