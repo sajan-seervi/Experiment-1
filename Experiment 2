@@ -1,0 +1,50 @@
+# Experiment 2
+
+runs = 148
+balls = 50
+wickets = 4
+runs_conceded = 29
+overs = 2
+catches = 3
+
+sr = (runs / balls) * 100          # Strike Rate
+er = runs_conceded / overs         # Economy Rate
+
+if runs >= 50 and sr >= 120:
+    bat = "Excellent"
+elif runs >= 30 and sr >= 100:
+    bat = "Good"
+elif runs >= 20:
+    bat = "Average"
+else:
+    bat = "Poor"
+
+if wickets >= 3 and er <= 6:
+    bowl = "Excellent"
+elif wickets >= 2 and er <= 8:
+    bowl = "Good"
+elif wickets >= 1:
+    bowl = "Average"
+else:
+    bowl = "Poor"
+
+if catches >= 2:
+    field = "Outstanding"
+elif catches >= 1:
+    field = "Active"
+else:
+    field = "Needs improvement"
+
+if bat == "Excellent" and bowl == "Excellent":
+    result = "Star all rounder"
+elif bat == "Good" and bowl == "Good":
+    result = "Strong all rounder"
+elif bat == "Good" or bowl == "Good":
+    result = "Supporting all rounder"
+else:
+    result = "Needs improvement"
+
+print("Batting:", bat)
+print("Bowling:", bowl)
+print("Fielding:", field)
+print("Final Result:", result)
