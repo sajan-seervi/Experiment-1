@@ -1,13 +1,49 @@
-#EXPERIMENT 3: WAP TO IMPLEMENT VARIOUS STRING OPERATIONS
+#EXPERIMENT 4: WAP TO IMPLEMENT DEMONSTRATE LIST AND RELATED FUNCTIONS IN PYTHON 
 
-AIM: to write a Python program to demonstrates various string operations 
+AIM: to write a Python program to demonstrates list operations and related functions such as append,extend and etc
 
 ALGORITHM:
 STEP 1: start the program
-STEP 2: input a string from the user
-STEP 3: display the original string and its length
-STEP 4: covert the string to uppercase and lowercase
-STEP 5: input  substring and find its position in the string
-STEP 6: perform the string operations 
+STEP 2: create a list with some elements
+STEP 3: add elements using append(),extend() and insert()
+STEP 4: remove elements using remove() and pop()
+STEP 5: find index and count of elements
+STEP 6: copy the list using copy() and clear the list using clear()
 STEP 7; display the results 
 STEP 8: stop the program
+
+CODE
+
+keyword = ["sushi", "max", "rahul", "network"]
+print("Initial list:", keyword)
+
+keyword.append("rohan")
+keyword.extend("maxwell")
+keyword.insert(1, "pat cummins")
+keyword.remove("network")
+
+removed_item = keyword.pop(2)
+
+index_position = keyword.index("rohan")
+count_rahul = keyword.count("rahul")
+
+print("List before clear():", keyword)
+
+copied_list = keyword.copy()
+keyword.clear()
+
+print("Final list:", keyword)
+print("Removed item:", removed_item)
+print("Index of rohan:", index_position)
+print("Count of rahul:", count_rahul)
+print("Copied list:", copied_list)
+
+
+OUTPUT
+initial list: ['sushil','max','rahul','netwrok']
+list before clear():['sushil','pat cummins','rahul','rohan','maxwell','m','a','x','w','e','l','l']
+final list:[]
+removed item: max
+index of rohan: 3
+count of rahul: 1
+copied list: ['sushil','pat cummins','rahul','rohan','maxwell','m','a','x','w','e','l','l']
