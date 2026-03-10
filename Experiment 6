@@ -1,3 +1,16 @@
+#EXPERIMENT 5: WAP TO DEMONSTRATE DICTIONARY AND RELATED FUNCTIONS IN PYTHON 
+
+AIM: to write a Python program to implement a phonebook using dictionary and demonstarte dictionary operations suchas pop(),keys(),values(),items(),copy(),get() and update()
+
+ALGORITHM:
+STEP 1: start the program
+STEP 2: create dictionary containing names and phone numbers 
+STEP 3: display a contact using pop()
+STEP 4: display all contacts using items() and a loop
+STEP 5: create a copy using copy() and retrieve a numberusing get()  
+STEP 6: add a new contact using update()
+STEP 7: display the updated phonebook and stop the program
+
 
 # Program 6: Phonebook using Dictionary
 
