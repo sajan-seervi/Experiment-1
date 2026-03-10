@@ -1,1 +1,13 @@
+#EXPERIMENT 3: WAP TO IMPLEMENT VARIOUS STRING OPERATIONS
 
+AIM: to write a Python program to demonstrates various string operations 
+
+ALGORITHM:
+STEP 1: start the program
+STEP 2: input a string from the user
+STEP 3: display the original string and its length
+STEP 4: covert the string to uppercase and lowercase
+STEP 5: input  substring and find its position in the string
+STEP 6: perform the string operations 
+STEP 7; display the results 
+STEP 8: stop the program
