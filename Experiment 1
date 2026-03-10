@@ -1,5 +1,20 @@
-# Experiment-1
-# Data Types & All Operators Example
+AIM: to write apython program that demonstrates the use of basic data types and arithmetic operators.
+
+ALGORITHM:
+STEP 1: start the program
+STEP 2: declare variables for monthly income,rent,gloceries,utilities and luxury item cost
+STEP 3: calculate the total expenses by adding rent,groceriesand utilities
+STEP 4: calculate monthly savings by substracting total expenses from monthly income
+STEP 5: print the total expenses and monthly savings
+STEP 6: calculate annual savings by mutiplying monthly saving by 12
+STEP 7: calculate avg daily budget by dividing monthly income by 30
+STEP 8: calculate how many luxury items can be bought using the savings
+STEP 9: calculate the remaining money after buying luxury items using the modulus operator
+STEP 10: display all the calculated results
+STEP 11: end the program
+
+
+#DATA TYPES AND ALL OPERATORS
 
 monthly_income = 5000
 rent = 1500
@@ -27,3 +42,12 @@ leftover_cash = savings % luxury_item_cost
 
 print("You can buy luxury items:", num_items)
 print("Leftover pocket money after purchase: $", leftover_cash)
+
+
+OUTPUT:
+total expenses: $2400
+monthly savings: $2600
+predicted annual savings: $31200
+average daily budget: $166.666666
+you can buy luxury items: 5.777777
+leftover pocket money after purchase: $350
