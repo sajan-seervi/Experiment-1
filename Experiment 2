@@ -1,4 +1,19 @@
-# Experiment 2
+#EXPERIMENT 2: WAP TO IMPLEMENT CONTROL FLOW STATEMENTS AND LOOPING STATEMENTS IN PYTHON
+
+AIM: to write a Python program to demonstrates the use of control flow statements and looping statements in python to evaluate a players performance
+
+
+ALGORITHM:
+STEP 1: start the program
+STEP 2: declare variables for runs,balls,wickets,runs conceeded and catches
+STEP 3: calculate the strike rate and economy rate
+STEP 4: use if-elif-else statements to determine batting, bowling,fielding performance.
+STEP 5: determine the final result based on batting and bowling performance.
+STEP 6: display batting,bowling,fielding and final result
+STEP 7: stop the program
+
+
+#CODE
 
 runs = 148
 balls = 50
@@ -48,3 +63,13 @@ print("Batting:", bat)
 print("Bowling:", bowl)
 print("Fielding:", field)
 print("Final Result:", result)
+
+
+OUTPUT
+strike rate:296.0
+economy:5.8
+batting performance: excellent batter
+bowling performance: excellent bowling
+fielding: outstanding fielder
+overal:star all-rounder
+
