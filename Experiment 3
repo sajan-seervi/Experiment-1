@@ -1,4 +1,19 @@
-# Write a program to input various string operations
+#EXPERIMENT 3: WAP TO IMPLEMENT VARIOUS STRING OPERATIONS
+
+AIM: to write a Python program to demonstrates various string operations 
+
+ALGORITHM:
+STEP 1: start the program
+STEP 2: input a string from the user
+STEP 3: display the original string and its length
+STEP 4: covert the string to uppercase and lowercase
+STEP 5: input  substring and find its position in the string
+STEP 6: perform the string operations 
+STEP 7; display the results 
+STEP 8: stop the program
+
+
+#CODE
 
 s = input("Enter a string: ")
 print("Original string:", s)
@@ -25,3 +40,26 @@ print("Concatenation:", concat)
 
 print("Is Alphabetic?", concat.isalpha())
 print("Is Numeric?", concat.isdigit())
+
+
+OUTPUT
+enter a string: hello world
+original string: hello world
+length of string: 11
+uppercase: HELLO WORLD
+lowercase: hello world
+
+enter a substring to find: world
+position:6
+
+enter the old string: world
+enter the new string: python
+after replacement: hello python
+
+split string: ['hello','world']
+
+enter first string: hello
+entyer second string: 123
+concatenation: hello123
+is alphabetic? false
+is numeric? false
