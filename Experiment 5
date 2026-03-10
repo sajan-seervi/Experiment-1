@@ -1,4 +1,60 @@
-experimet jwkjj
-dkdjkdj
-wdjkdkdj
-dnej
+#EXPERIMENT 5: WAP TO DEMONSTRATE TUPLE AND RELATED FUNCTIONS IN PYTHON 
+
+AIM: to write a Python program to demonstrates tuple operations and related functions such as sum(),length(),max(),min(),etc
+
+ALGORITHM:
+STEP 1: start the program
+STEP 2: create tuples for students,marks,ages and departments
+STEP 3: display all tuple values
+STEP 4: find sum, maximun,minimum marks using built in functions
+STEP 5: find total number of students using len()
+STEP 6: access and display the marks,age and departments of student using indexinx
+STEP 7: stop the program
+
+CODE
+# Exp 5: Tuple
+
+print("Student database")
+
+students = ("Rahul", "Anita", "Kiran", "Meena", "Arjun")
+marks = (85, 92, 78, 90, 88)
+ages = (20, 21, 19, 22, 20)
+departments = ("CS", "Math", "Physics", "Biology", "Chemistry")
+
+print("Students:", students)
+print("Marks:", marks)
+print("Ages:", ages)
+print("Departments:", departments)
+
+print("Sum of marks:", sum(marks))
+print("Total students:", len(students))
+print("Highest mark:", max(marks))
+print("Lowest mark:", min(marks))
+
+print("Sum of ages:", sum(ages))
+
+print("Index of Kiran:", students.index("Kiran"))
+
+print("Marks of Meena:", marks[students.index("Meena")])
+print("Age of Meena:", ages[students.index("Meena")])
+print("Department of Meena:", departments[students.index("Meena")])
+
+print("Number of students aged 20:", ages.count(20))
+
+
+OUTPUT:
+student database
+students:('rahul','anita','kiran','meena','arjun')
+marks:(85,92,78,90,88)
+ages:(20,21,19,22,20)
+departments:('cs','math','physics','biology','chemistry')
+sum of marks: 433
+total students: 5
+highest marks: 92
+lowest marks: 78
+sum of ages: 102
+index of kiran: 2
+marks of meena: 90
+age of meena: 22
+department of meena: biology
+number of students aged 20: 2
