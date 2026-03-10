@@ -1,7 +1,45 @@
-dhejcbhjbkcvkjf
-rkcrkjkc
-rnvvvrr
-r
-r
-r
-r
+
+# Program 6: Phonebook using Dictionary
+
+phonebook = {
+    "yadav": "9333919689",
+    "tanya": "9351658721",
+    "shivani": "9353968901",
+    "simran": "9457562102",
+    "tanu": "2546789520"
+}
+
+print("Initial Phonebook:", phonebook)
+
+print("Deleted tanu:", phonebook.pop("tanu"))
+print("Phonebook now:", phonebook)
+
+print("All contacts:")
+for name, number in phonebook.items():
+    print(name, ":", number)
+
+print("All names:", list(phonebook.keys()))
+print("All numbers:", list(phonebook.values()))
+
+phonebook_copy = phonebook.copy()
+print("Copied phonebook:", phonebook_copy)
+
+print("Tanya's number:", phonebook.get("tanya"))
+
+phonebook.update({"rahul": "9876543210"})
+print("Updated phonebook:", phonebook)
+
+OUTPUT
+Initial Phonebook: {'yadav': '9333919689', 'tanya': '9351658721', 'shivani': '9353968901', 'simran': '9457562102', 'tanu': '2546789520'}
+Deleted tanu: 2546789520
+Phonebook now: {'yadav': '9333919689', 'tanya': '9351658721', 'shivani': '9353968901', 'simran': '9457562102'}
+All contacts:
+yadav : 9333919689
+tanya : 9351658721
+shivani : 9353968901
+simran : 9457562102
+All names: ['yadav', 'tanya', 'shivani', 'simran']
+All numbers: ['9333919689', '9351658721', '9353968901', '9457562102']
+Copied phonebook: {'yadav': '9333919689', 'tanya': '9351658721', 'shivani': '9353968901', 'simran': '9457562102'}
+Tanya's number: 9351658721
+Updated phonebook: {'yadav': '9333919689', 'tanya': '9351658721', 'shivani': '9353968901', 'simran': '9457562102', 'rahul': '9876543210'}
