@@ -1,4 +1,4 @@
-AIM: to write apython program that demonstrates the use of basic data types and arithmetic operators.
+AIM: to write a python program that demonstrates the use of basic data types and operators in python.
 
 ALGORITHM:
 STEP 1: start the program
@@ -14,8 +14,7 @@ STEP 10: display all the calculated results
 STEP 11: end the program
 
 
-#DATA TYPES AND ALL OPERATORS
-#CODE
+CODE:
 
 monthly_income = 5000
 rent = 1500
@@ -27,15 +26,15 @@ total_expenses = rent + groceries + utilities
 
 savings = monthly_income - total_expenses
 
-print("Total expenses: $", total_expenses)
-print("Monthly savings: $", savings)
+print("total expenses: $", total_expenses)
+print("monthly savings: $", savings)
 
 annual_saving = savings * 12
 
 daily_budget = monthly_income / 30
 
-print("Predicted annual savings: $", annual_saving)
-print("Average daily budget: $", daily_budget)
+print("predicted annual savings: $", annual_saving)
+print("average daily budget: $", daily_budget)
 
 num_items = savings / luxury_item_cost
 
