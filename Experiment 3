@@ -1,6 +1,6 @@
-#EXPERIMENT 3: WAP TO IMPLEMENT VARIOUS STRING OPERATIONS
+EXPERIMENT 3: WAP TO IMPLEMENT VARIOUS STRING OPERATIONS
 
-AIM: to write a Python program to demonstrates various string operations 
+AIM: to write a python program to demonstrate various string operations 
 
 ALGORITHM:
 STEP 1: start the program
@@ -13,30 +13,30 @@ STEP 7; display the results
 STEP 8: stop the program
 
 
-#CODE
+CODE
 
-s = input("Enter a string: ")
-print("Original string:", s)
+s = input("enter a string: ")
+print("original string:", s)
 
-print("Length of string:", len(s))
+print("length of string:", len(s))
 
-print("Uppercase:", s.upper())
-print("Lowercase:", s.lower())
+print("uppercase:", s.upper())
+print("lowercase:", s.lower())
 
-sub = input("Enter a substring to find: ")
-print("Position:", s.find(sub))
+sub = input("enter a substring to find: ")
+print("position:", s.find(sub))
 
-old = input("Enter the old string: ")
-new = input("Enter the new string: ")
-print("After replacement:", s.replace(old, new))
+old = input("enter the old string: ")
+new = input("enter the new string: ")
+print("after replacement:", s.replace(old, new))
 
-print("Split string:", s.split())
+print("split string:", s.split())
 
-str1 = input("Enter first string: ")
-str2 = input("Enter second string: ")
+str1 = input("enter first string: ")
+str2 = input("enter second string: ")
 
 concat = str1 + str2
-print("Concatenation:", concat)
+print("concatenation:", concat)
 
 print("Is Alphabetic?", concat.isalpha())
 print("Is Numeric?", concat.isdigit())
@@ -50,16 +50,16 @@ uppercase: HELLO WORLD
 lowercase: hello world
 
 enter a substring to find: world
-position:6
+position:5
 
 enter the old string: world
-enter the new string: python
-after replacement: hello python
+enter the new string: world2
+after replacement: hello world2
 
 split string: ['hello','world']
 
 enter first string: hello
-entyer second string: 123
-concatenation: hello123
-is alphabetic? false
-is numeric? false
+enter second string: world
+concatenation: helloworld
+Is alphabetic? true
+Is numeric? false
