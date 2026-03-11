@@ -1,6 +1,6 @@
-#EXPERIMENT 6: WAP TO DEMONSTRATE DICTIONARY AND RELATED FUNCTIONS IN PYTHON 
+EXPERIMENT 6: WAP TO DEMONSTRATE DICTIONARY AND RELATED FUNCTIONS IN PYTHON 
 
-AIM: to write a Python program to implement a phonebook using dictionary and demonstarte dictionary operations suchas pop(),keys(),values(),items(),copy(),get() and update()
+AIM: to write a Python program to implement a phonebook using dictionary and demonstarte dictionary operations such as pop(),keys(),values(),items(),copy(),get() and update()
 
 ALGORITHM:
 STEP 1: start the program
@@ -11,14 +11,13 @@ STEP 5: create a copy using copy() and retrieve a numberusing get()
 STEP 6: add a new contact using update()
 STEP 7: display the updated phonebook and stop the program
 
-
-# Program 6: Phonebook using Dictionary
+CODE:
 
 phonebook = {
-    "yadav": "9333919689",
-    "tanya": "9351658721",
-    "shivani": "9353968901",
-    "simran": "9457562102",
+    "yadav": "9353919689",
+    "tanya": "9354658721",
+    "shivani": "9353968921",
+    "simran": "9487562102",
     "tanu": "2546789520"
 }
 
@@ -43,16 +42,18 @@ phonebook.update({"rahul": "9876543210"})
 print("Updated phonebook:", phonebook)
 
 OUTPUT
-Initial Phonebook: {'yadav': '9333919689', 'tanya': '9351658721', 'shivani': '9353968901', 'simran': '9457562102', 'tanu': '2546789520'}
+Initial Phonebook: {'yadav': '9353919689', 'tanya': '9354658721', 'shivani': '9353968921', 'simran': '9487562102', 'tanu': '2546789520'}
 Deleted tanu: 2546789520
-Phonebook now: {'yadav': '9333919689', 'tanya': '9351658721', 'shivani': '9353968901', 'simran': '9457562102'}
+Phonebook now: {'yadav': '9353919689', 'tanya': '9354658721', 'shivani': '9353968921', 'simran': '9487562102'}
 All contacts:
-yadav : 9333919689
-tanya : 9351658721
-shivani : 9353968901
-simran : 9457562102
+yadav : 9353919689
+tanya : 9354658721
+shivani : 9353968921
+simran : 9487562102
 All names: ['yadav', 'tanya', 'shivani', 'simran']
-All numbers: ['9333919689', '9351658721', '9353968901', '9457562102']
-Copied phonebook: {'yadav': '9333919689', 'tanya': '9351658721', 'shivani': '9353968901', 'simran': '9457562102'}
-Tanya's number: 9351658721
-Updated phonebook: {'yadav': '9333919689', 'tanya': '9351658721', 'shivani': '9353968901', 'simran': '9457562102', 'rahul': '9876543210'}
+All numbers: ['9353919689', '9354658721', '9353968921', '9487562102']
+Copied phonebook: {'yadav': '9353919689', 'tanya': '9354658721', 'shivani': '9353968921', 'simran': '9487562102'}
+Tanya's number: 9354658721
+Updated phonebook: {'yadav': '9353919689', 'tanya': '9354658721', 'shivani': '9353968921', 'simran': '9487562102', 'rahul': '9876543210'}
+
+=== Code Execution Successful ===
