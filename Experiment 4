@@ -1,4 +1,4 @@
-#EXPERIMENT 4: WAP TO IMPLEMENT DEMONSTRATE LIST AND RELATED FUNCTIONS IN PYTHON 
+EXPERIMENT 4: WAP TO DEMONSTRATE LIST AND RELATED FUNCTIONS IN PYTHON 
 
 AIM: to write a Python program to demonstrates list operations and related functions such as append,extend and etc
 
@@ -14,8 +14,8 @@ STEP 8: stop the program
 
 CODE
 
-keyword = ["sushi", "max", "rahul", "network"]
-print("Initial list:", keyword)
+keyword = ["sushil", "max", "rahul", "network"]
+print("initial list:", keyword)
 
 keyword.append("rohan")
 keyword.extend("maxwell")
@@ -27,16 +27,16 @@ removed_item = keyword.pop(2)
 index_position = keyword.index("rohan")
 count_rahul = keyword.count("rahul")
 
-print("List before clear():", keyword)
+print("list before clear():", keyword)
 
 copied_list = keyword.copy()
 keyword.clear()
 
-print("Final list:", keyword)
-print("Removed item:", removed_item)
-print("Index of rohan:", index_position)
-print("Count of rahul:", count_rahul)
-print("Copied list:", copied_list)
+print("final list:", keyword)
+print("removed item:", removed_item)
+print("index of rohan:", index_position)
+print("count of rahul:", count_rahul)
+print("copied list:", copied_list)
 
 
 OUTPUT
