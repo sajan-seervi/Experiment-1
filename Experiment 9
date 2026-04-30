@@ -1,0 +1,39 @@
+Aim:- WRITE A PROGRAM TO DEMONSTRATE DATAFRAME CREATION AND VISUALIZATION USING PANDAS AND MATPLOTLIB
+
+ALGORITHM:-
+
+STEP 1: start the program
+STEP 2: import required libraries (pandas, numpy, matplotlib)
+STEP 3: create data using numpy array
+STEP 4: create dataframe using pandas
+STEP 5: convert runs column into integer type
+STEP 6: display the dataframe
+STEP 7: create bar chart using matplotlib
+STEP 8: label x-axis, y-axis and title
+STEP 9: display the graph
+STEP 10: stop the program
+
+#CODE
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.array([["MI", 105], ["RCB", 100], ["LSG", 104], ["SRH", 240]])
+df = pd.DataFrame(data, columns=["Team", "Runs"])
+df["Runs"] = df["Runs"].astype(int)
+
+print(df)
+
+plt.bar(df["Team"], df["Runs"])
+plt.xlabel("Team")
+plt.ylabel("Run")
+plt.title("IPL Team Runs")
+plt.show()
+
+OUTPUT:-
+
+  Team  Runs
+0   MI   105
+1  RCB   100
+2  LSG   104
+3  SRH   240
