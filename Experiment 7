@@ -36,3 +36,18 @@ obj = Student()
 obj.getData()
 obj.total_marks()
 obj.display()
+
+OUTPUT:- 
+
+Enter the name: sajan
+Enter the USN: 24bcar0493
+Enter marks 1: 50
+Enter marks 2: 40
+Enter marks 3: 59
+Enter marks 4: 78
+Enter marks 5: 76
+
+Student Details
+Name: sajan
+USN: 24bcar0493
+Total Marks: 303
