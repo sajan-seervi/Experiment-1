@@ -1,39 +1,37 @@
-Aim:- WRITE A PROGRAM TO DEMONSTRATE DATAFRAME CREATION AND VISUALIZATION USING PANDAS AND MATPLOTLIB
+AIM:- 
+Write a program to implement numpy and pandas packages
 
-ALGORITHM:-
+ALGORITHM:- 
+Step 1: Start
+Step 2: Import NumPy and Pandas
+Step 3: Create a NumPy array
+Step 4: Find mean, maximum, and perform addition
+Step 5: Display results
+Step 6: Create student data dictionary
+Step 7: Convert into DataFrame
+Step 8: Display pandas operation
+Step 9: Stop
 
-STEP 1: start the program
-STEP 2: import required libraries (pandas, numpy, matplotlib)
-STEP 3: create data using numpy array
-STEP 4: create dataframe using pandas
-STEP 5: convert runs column into integer type
-STEP 6: display the dataframe
-STEP 7: create bar chart using matplotlib
-STEP 8: label x-axis, y-axis and title
-STEP 9: display the graph
-STEP 10: stop the program
-
-#CODE
-import pandas as pd
+#CODE 
 import numpy as np
-import matplotlib.pyplot as plt
+import pandas as pd
 
-data = np.array([["MI", 105], ["RCB", 100], ["LSG", 104], ["SRH", 240]])
-df = pd.DataFrame(data, columns=["Team", "Runs"])
-df["Runs"] = df["Runs"].astype(int)
+arr = np.array([1, 2, 3, 4, 5])
+print("Array:", arr)
+print("Sum:", arr.sum())
 
-print(df)
+data = {"Name": ["A", "B", "C"], "Marks": [80, 90, 85]}
+df = pd.DataFrame(data)
+print("\nDataFrame:\n", df)
 
-plt.bar(df["Team"], df["Runs"])
-plt.xlabel("Team")
-plt.ylabel("Run")
-plt.title("IPL Team Runs")
-plt.show()
 
-OUTPUT:-
+#OUTPUT
+Array:[1 2 3 4 5]
+Sum:15
 
-  Team  Runs
-0   MI   105
-1  RCB   100
-2  LSG   104
-3  SRH   240
+DataFrame:
+       Name        marks
+0        A          80
+1        B          90
+2        C          85
+
