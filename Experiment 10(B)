@@ -1,0 +1,49 @@
+#AIM:-
+Write a program to implement various types of visualisation in python.
+
+
+#ALGORITHM:- 
+Step 1: Import pandas, matplotlib, seaborn
+Step 2: Create or load dataset
+Step 3: Use line plot for trend
+Step 4: Use bar chart for comparison
+Step 5: Use histogram for distribution
+Step 6: Use scatter plot for relationship
+Step 7: Use box plot for statistical summary
+Step 8: Display all graphs using plt.show()
+Step 9: Stop
+
+
+#CODE:- 
+import matplotlib.pyplot as plt
+
+names = ["A", "B", "C", "D"]
+marks = [85, 90, 78, 88]
+
+plt.bar(names, marks)
+plt.title("Bar Chart - Marks")
+plt.xlabel("Students")
+plt.ylabel("Marks")
+plt.show()
+
+plt.plot(names, marks)
+plt.title("Line Chart - Marks")
+plt.xlabel("Students")
+plt.ylabel("Marks")
+plt.show()
+
+plt.pie(marks, labels=names, autopct='%1.1f%%')
+plt.title("Pie Chart - Marks Distribution")
+plt.show()
+
+plt.hist(marks)
+plt.title("Histogram - Marks")
+plt.xlabel("Marks")
+plt.ylabel("Frequency")
+plt.show()
+
+plt.scatter(names, marks)
+plt.title("Scatter Plot - Marks")
+plt.xlabel("Students")
+plt.ylabel("Marks")
+plt.show()
