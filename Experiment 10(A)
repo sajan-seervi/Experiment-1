@@ -1,0 +1,55 @@
+#AIM:- 
+Write a program to load, clean and exploring the data using python.
+
+
+#ALGORITHM:- 
+Step 1: Start
+Step 2: Import pandas libraries
+Step 3: Load dataset into DataFrame
+Step 4: Display data using head()
+Step 5: Check missing values using isnull()
+Step 6: Fill or remove missing values
+Step 7: Remove duplicate rows
+Step 8: Display cleaned data
+Step 9: Use describe() for summary
+Step 10: End
+
+
+
+#CODE:- 
+import pandas as pd
+import numpy as np
+
+data = {
+    "Name": ["Sajan", "Yadav", "Shaksham", None],
+    "Marks": [85, 90, None, 75]
+}
+df = pd.DataFrame(data)
+print("Original Data:")
+print(df)
+
+df["Name"].fillna("Unknown", inplace=True)
+df["Marks"].fillna(df["Marks"].mean(), inplace=True)
+
+df.drop_duplicates(inplace=True)
+
+print("\nCleaned Data:")
+print(df)
+
+
+#OUTPUT
+ 
+Original data
+     Name      Marks
+0    Sajan      85.0
+1    Yadav      90.0
+2   Shaksham    NaN
+3    None       75.0
+
+
+Cleaned data 
+      Name     Marks
+0    Sajan     85.0
+1    Yadav     90.0
+2   Shaksham   83.33
+3   unknown    75.0
