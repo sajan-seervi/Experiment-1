@@ -19,72 +19,77 @@ STEP 13: display results and stop the program
 
 
 #CODE
+ #re.match()
 import re
-
-text = "My email is sajan@gmail.com and phone is 9353919689"
-
-# 1. match()
-pattern_match = r"My"
-match_result = re.match(pattern_match, text)
-if match_result:
-    print("1. match():", match_result.group())
+device = "IOT_4589"
+r = re.match("IOT", device)
+if r:
+    print("1. Valid IOT device")
 else:
-    print("No match")
+    print("invalid device")
+#OUTPUT
+1. Valid IOT device
 
-# 2. search()
-pattern_search = r"\d{10}"
-search_result = re.search(pattern_search, text)
-if search_result:
-    print("2. search():", search_result.group())
+#re.search()
+import re
+msg = "device connected to 5g network"
+r = re.search("connected", msg)
+if r:
+    print("2. connected found")
 else:
-    print("Not found")
+    print("connected not found")
+#OUTPUT 
+2. connected found
 
-# 3. findall()
-pattern_findall = r"\w+@\w+\.\w+"
-findall_result = re.findall(pattern_findall, text)
-print("3. findall():", findall_result)
 
-# 4. finditer()
-print("4. finditer():")
-for match in re.finditer(pattern_findall, text):
-    print(f"Found: {match.group()} at position {match.start()}")
+#re.findall()
+import re
+data = "temp:24 humidity:60 pressure:102"
+r = re.findall(r"[0-9]+", data)
+print(r)
+#OUTPUT 
+['24', '60', '102']
 
-# 5. sub()
-pattern_sub = r"\d"
-sub_result = re.sub(pattern_sub, "*", text)
-print("5. sub():", sub_result)
 
-# 6. split()
-pattern_split = r"\s"
-split_result = re.split(pattern_split, text)
-print("6. split():", split_result)
+#re.finditer()
+import re
+text = "cat bat mat"
+pattern = "bat"
+matches = re.finditer(pattern, text)
+for m in matches:
+    print("4. match:", m.group())
+#OUTPUT 
+4. match: bat
 
-# 7. compile()
-pattern_compile = re.compile(r"\w+")
-compiled_result = pattern_compile.findall(text)
-print("7. compiled pattern:", compiled_result)
 
-# 8. fullmatch()
-print("-" * 20)
-date = input("Enter date (DD/MM/YYYY): ")
-pattern_date = r"^\d{2}/\d{2}/\d{4}$"
+#re.split()
+import re
+text = "apple, banana; orange grape"
+pattern = r"[,; ]+"
+result = re.split(pattern, text)
+print(result)
+#OUTPUT 
+['apple', 'banana', 'orange', 'grape']
 
-if re.fullmatch(pattern_date, date):
+
+#re.sub()
+import re
+text = "My phone number is 12345"
+pattern = r"\d"
+result = re.sub(pattern, "*", text)
+print(result)
+#OUTPUT 
+My phone number is *****
+
+
+.#Validation
+import re
+date = input("Enter a date (DD/MM/YYYY): ")
+pattern = r"\d{2}/\d{2}/\d{4}"
+if re.fullmatch(pattern, date):
     print("Valid date format")
 else:
     print("Invalid date format")
-
-
-OUTPUT:-
-1. match(): My
-2. search(): 9353919689
-3. findall(): ['sajan@gmail.com']
-4. finditer():
-Found: sajan@gmail.com at position 12
-5. sub(): My email is sajan@gmail.com and phone is **********
-6. split(): ['My', 'email', 'is', 'sajan@gmail.com', 'and', 'phone', 'is', '9876543210']
-7. compiled pattern: ['My', 'email', 'is', 'sajan', 'gmail', 'com', 'and', 'phone', 'is', '9876543210']
---------------------
-Enter date (DD/MM/YYYY):12/05/2024
-valid date format 
-
+#OUTPUT 
+Enter a date (DD/MM/YYYY): 02/02/2025
+Valid date format
